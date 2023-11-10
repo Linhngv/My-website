@@ -78,15 +78,49 @@
                 cho đối tượng đó.
                 Ví dụ, làm chức năng Quản lý Sinh viên, bao gôm tính năng thêm, sửa, xóa, tìm kiếm.
                 Chú ý: Các thành viên trong lớp, trong nhóm không được chọn các đối tượng giống nhau. </p>
-                <h5>Đối tượng: Vé triển lãm Tranh</h5>
+                <h5>Đối tượng: Tranh</h5>
                 <p>Một số bức tranh sẽ trưng bày</p>
+                             
                 <img src="https://i.pinimg.com/564x/af/74/b1/af74b129b1cea7d53551808de5c917ca.jpg" style="width: 20%; margin-right: 10px;" alt="Card Image">           
                 <img src="https://i.pinimg.com/564x/13/f6/a4/13f6a49e0ccb17ce26673c1035867d7b.jpg" style="width: 20%; margin-right: 30px;" alt="Card Image">
                 <img src="https://i.pinimg.com/564x/88/71/00/88710013ab25587386be9bca083fb612.jpg" style="width: 30%;margin-right: 20px;" alt="Card Image">
                 <img src="https://i.pinimg.com/564x/42/fd/10/42fd1020cd8a12deea1292089c18dc32.jpg" style="width: 20%;margin-right: 40px;" alt="Card Image">
                 <br><br>
-               <a><i class="fa fa-map-marker-alt"></i>244, Pasteur, P.6, Quận 3, TP.HCM</a>
-               <h6>Design Lab4</h6>
+                <div><h5>Sự kiện cuối năm 2023   <i class="fa fa-edit" style="color: #0f6674;"></i></h5>
+                </div>
+                <table style="width: 50%;">
+                  <tr>
+                    <th>Thời gian</th>
+                    <th>Ngày</th>
+                    <th>Họa sĩ</th>
+                  </tr>
+                  <tr>
+                    <td>8h30 AM </td>
+                    <td>19/11/2023</td>
+                    <td>Van Gogh</td>
+                  </tr>
+                  <tr>
+                    <td>8h30 AM</td>
+                    <td>20/12/2023</td>
+                    <td>Vinci</td>
+                  </tr>
+                </table><br><br>
+               <a><h6>Design Lab4</h6>
+                <p></p>
+                <i class="fa fa-map-marker-alt"></i>244, Pasteur, P.6, Quận 3, TP.HCM
+                <br>
+                </a>
+            
+               <div class="d-flex justify-content-start mt-4">
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                    style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                    style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                    style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                    style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
         
         <div id="Des" class="tabcontent">
@@ -116,7 +150,7 @@
 
         <div id="Im" class="tabcontent">
             <h3>Implement Lab4</h3>
-            <h2 style="text-align: center; font-family: arial">QUẢN LÝ VÉ TRIỂN LÃM TRANH </h2>
+            <h2 style="text-align: center; font-family: arial">QUẢN LÝ TRANH </h2>
             <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
                 <input type="text" placeholder="Search.." name="search2">
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -132,8 +166,7 @@
                             <th>Time: 8h30-17h</th>
                         </tr>
                         <tr>
-                            <th>Price: 45.000 đồng</th>
-                            <th>Sticket: 20</th>
+                            <p>Chủ đề: Họa sĩ Van Gogh</p>
                         </tr>
                     </table>
                     <a><i class="fa fa-map-marker-alt">244, Pasteur, P.6, Quận 3, TP.HCM</i></a>
@@ -156,8 +189,8 @@
                                     <option value="9h-17h">9h00 AM-17h00 PM</option>
                                     <option value="9h30-17h">9h30 AM-17h00 PM</option>
                                   </select><br>
-                                <label for="lname">Sticket:</label>
-                                <input type="text" id="lname"value="2" name="sticket"><br>
+                                <label for="lname">Họa sĩ</label>
+                                <input type="text" id="lname"value="Van Gogh" name="sticket"><br>
                                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Save</button>
                               </form>
                             </div>
@@ -177,8 +210,7 @@
                             <th>Time: 8h30-17h</th>
                         </tr>
                         <tr>
-                            <th>Price: 45.000 đồng</th>
-                            <th>Sticket: 20</th>
+                            <p>Chủ đề: Họa sĩ Vinci</p>
                         </tr>
                     </table>
                     <a><i class="fa fa-map-marker-alt">244, Pasteur, P.6, Quận 3, TP.HCM</i></a>
@@ -201,8 +233,8 @@
                                     <option value="9h-17h">9h00 AM-17h00 PM</option>
                                     <option value="9h30-17h">9h30 AM-17h00 PM</option>
                                   </select><br>
-                                <label for="lname">Sticket:</label>
-                                <input type="text" id="lname"value="2" name="sticket"><br>
+                                <label for="lname">Họa sĩ</label>
+                                <input type="text" id="lname"value="Vinci" name="sticket"><br>
                                 <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Save</button>
                               </form>
                             </div>
@@ -221,8 +253,7 @@
                             <th>Time: 8h30-17h</th>
                         </tr>
                         <tr>
-                            <th>Price: 45.000 đồng</th>
-                            <th>Sticket: 20</th>
+                            <p>Chủ đề: Họa sĩ Tô Ngọc Vân</p>
                         </tr>
                     </table>
                     <a><i class="fa fa-map-marker-alt">244, Pasteur, P.6, Quận 3, TP.HCM</i></a>
@@ -245,8 +276,8 @@
                                     <option value="9h-17h">9h00 AM-17h00 PM</option>
                                     <option value="9h30-17h">9h30 AM-17h00 PM</option>
                                   </select><br>
-                                <label for="lname">Sticket:</label>
-                                <input type="text" id="lname"value="2" name="sticket"><br>
+                                <label for="lname">Họa sĩ</label>
+                                <input type="text" id="lname"value="Tô Ngọc Vân" name="sticket"><br>
                                 <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Save</button>
                               </form>
                             </div>
@@ -265,8 +296,7 @@
                             <th>Time: 8h30-17h</th>
                         </tr>
                         <tr>
-                            <th>Price: 45.000 đồng</th>
-                            <th>Sticket: 20</th>
+                            <p>Chủ đề: Họa sĩ Bùi Xuân Phái</p>
                         </tr>
                     </table>
                     <a><i class="fa fa-map-marker-alt">244, Pasteur, P.6, Quận 3, TP.HCM</i></a>
@@ -289,8 +319,8 @@
                                     <option value="9h-17h">9h00 AM-17h00 PM</option>
                                     <option value="9h30-17h">9h30 AM-17h00 PM</option>
                                   </select><br>
-                                <label for="lname">Sticket:</label>
-                                <input type="text" id="lname"value="2" name="sticket"><br>
+                                <label for="lname">Họa sĩ</label>
+                                <input type="text" id="lname"value="Bùi Xuân Phái" name="sticket"><br>
                                 <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Save</button>
                               </form>
                             </div>
@@ -309,8 +339,7 @@
                             <th>Time: 8h30-17h</th>
                         </tr>
                         <tr>
-                            <th>Price: 45.000 đồng</th>
-                            <th>Sticket: 20</th>
+                            <p>Chủ đề: Họa sĩ Paul Cézanne</p>
                         </tr>
                     </table>
                     <a><i class="fa fa-map-marker-alt">244, Pasteur, P.6, Quận 3, TP.HCM</i></a>
@@ -333,8 +362,8 @@
                                     <option value="9h-17h">9h00 AM-17h00 PM</option>
                                     <option value="9h30-17h">9h30 AM-17h00 PM</option>
                                   </select><br>
-                                <label for="lname">Sticket:</label>
-                                <input type="text" id="lname"value="2" name="sticket"><br>
+                                <label for="lname">Họa sĩ</label>
+                                <input type="text" id="lname"value="Paul Cézanne" name="sticket"><br>
                                 <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Save</button>
                               </form>
                             </div>
@@ -362,8 +391,8 @@
                                     <option value="9h-17h">9h00 AM-17h00 PM</option>
                                     <option value="9h30-17h">9h30 AM-17h00 PM</option>
                                   </select><br>
-                                <label for="lname">Sticket:</label>
-                                <input type="text" id="lname"value="2" name="sticket"><br>
+                                <label for="lname">Họa sĩ</label>
+                                <input type="text" id="lname"value="Vinci" name="sticket"><br>
                                 <button type="button" onclick="document.getElementById('id06').style.display='none'" class="cancelbtn">Add</button>
                               </form>
                             </div>
