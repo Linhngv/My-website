@@ -69,8 +69,158 @@
             <button class="tablinks" onclick="openCity(event, 'Re')">Requirement</button>
             <button class="tablinks" onclick="openCity(event, 'Des')">Design</button>
             <button class="tablinks" onclick="openCity(event, 'Im')">Implement</button>
+            <button class="tablinks" onclick="openCity(event, 'us')">User Scenario</button>
         </div>
+        <div id="us" class="tabcontent" style="background-color: black;">
+          <h3>Design Lab5</h3>
+          <a>
+            <h5>Design on HTML</h5>
+            <button style="margin-left: 85%;">Đăng nhập <i class="fa fa-user"></i></button>
+            <div>
+              <table>
+                <tr>
+                    <th>
+                      <label for="lname" style="color: #fff;">Địa chỉ:</label>
+                     <select id="lname" name="time">
+                     <option value="8h30-17h">Linh Trung, TP Thủ Đức, TP Hồ Chí Minh</option>
+                    <option value="9h-17h">Nguyễn Thị Minh Khai, Quận 1, TP Hồ Chí Minh</option>
+                    <option value="9h30-17h">3/2, Quận 4, TP Hồ Chí Minh</option>
+                    </select><br>    
+                </tr>
+               
+            </table>
+                       
+              <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                  <input type="text" placeholder="Search.." name="search2">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <br>
+                <br>
+                <div class="ha">
+                  <img src="img/Obst - Früchte _ Fruit.jpeg" alt="Hình ảnh mô tả">
+                  <p>-20%</p>
+                </div>
+            </div>
+              <div class="card-container">
+                  <div class="card">
+                    <div class="ha1">
+                      <img src="https://i.pinimg.com/564x/53/aa/82/53aa82c079dc8d242d6e4b7a826e9900.jpg" alt="Hình ảnh mô tả">
+                      <p><i class="fa fa-star" style="color: yellow;"></i> 5.0</p>
+                    </div>
+                      <h3>Lựu</h3>
+                     <p>Giá 80.000đ</p>
+                    
+                          <button  onclick="document.getElementById('id01').style.display='block'" class="b1" style="background-color: #38a7b9;">+</button>
+  
+                          <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                            <form class="modal-content" action="/action_page.php">
+                              <div class="container">
+                                <form action="/action_page.php">
+                                  <img src="https://i.pinimg.com/564x/53/aa/82/53aa82c079dc8d242d6e4b7a826e9900.jpg" style="width: 10%; " alt="Card Image">
+                                  <br>
+                                  <h2>Lựu</h2>
+                                  <p>
+                                  -Xuất xứ: Việt Nam<br>
+                                  -Mã trái cây: #4033<br>
+                                    Giá: 80.000đ</p>
+                                       
+                                    <!-- Nút tăng số lượng -->
+                                 <button class="text1" onclick="increaseQuantity()">+</button>
+                                          <!-- Input để hiển thị số lượng -->
+                                    <input class="text1" type="text" id="quantityInput" value="1" readonly>
+                                <!-- Nút giảm số lượng -->
+                               <button class="text1" onclick="decreaseQuantity()">-</button>
+                                       
+                                       <div>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i><br>
+                                        <i class="fa fa-map-marker-alt"></i>Linh Trung, TP Thủ Đức, TP HCM
+                                       </div>
+                                      
+                                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Thêm vào giỏ</button>
+                                </form>
+                              </div>
+                            </form>
+                          </div>
+                      
+  
+                  </div>
+                  <div class="card">
+                    <div class="ha1">
+                      <img src="img/Instagram.jpeg" alt="Card Image">
+                      <p><i class="fa fa-star" style="color: yellow;"></i> 5.0</p>
+                    </div>
+        
+                      <h3>Táo</h3>
+                      
+                     <p>Giá: 70.000đ</p>
 
+
+                      <button  onclick="document.getElementById('id02').style.display='block'" class="b1" style="background-color: #38a7b9;">+</button>
+  
+                          <div id="id02" class="modal">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+                            <form class="modal-content" action="/action_page.php">
+                              <div class="container">
+                                <form action="/action_page.php">
+                                  <img src="img/Instagram.jpeg" style="width: 10%; " alt="Card Image">
+                                  <br>
+                                  <h2>Táo</h2>
+                                  <p>
+                                  -Xuất xứ: Việt Nam<br>
+                                  -Mã trái cây: #4033<br>
+                                  Giá: 70.000đ</p>
+                                       
+                                    <!-- Nút tăng số lượng -->
+                                 <button class="text1" onclick="increaseQuantity()">+</button>
+                                          <!-- Input để hiển thị số lượng -->
+                                    <input class="text1" type="text" id="quantityInput" value="1" readonly>
+                                <!-- Nút giảm số lượng -->
+                               <button class="text1" onclick="decreaseQuantity()">-</button>
+                                      
+                                       <div>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i>
+                                        <i class="fa fa-star" style="color: yellow;"></i><br>
+                                        <i class="fa fa-map-marker-alt"></i> Linh Trung, TP Thủ Đức, TP HCM
+                                       </div>
+                                      
+                                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Thêm vào giỏ</button>
+                                </form>
+                              </div>
+                            </form>
+                          </div>
+                      
+  
+                  </div>
+                    
+            </div>
+            <br>
+            <br>
+            <table>
+              <tr>
+                  <th><h5>Design on Paper
+                    <img src="img/userScenario.jpg" style="width: 35%;"></h5></th>
+                  <th><h5>Design on Figma
+                    <a href="https://www.figma.com/file/uEixO2lJBDfXbG5JscRnIC/Lab5-(Community)-(Community)?type=design&mode=dev" target="_blank">
+                    <button style="border-radius: 5px; background-color: #38a7b9; color: #fff; border: none;">
+                    Go to Figma <i class="fa fa-arrow-right"></i></h5></button></a>
+                  </th>
+              </tr>
+              <tr>
+                
+              </tr>
+          </table>
+            
+
+         
+      </div>
         <div id="Re" class="tabcontent">
             <h3>Requirement</h3>
             <p>Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như lớp môn học, giảng viên,…
@@ -399,12 +549,15 @@
                           </form>
                         </div>
                 </a>
+                
             </div>
         </div>
+        
         </div>
-
+       
         </div>
         </div>
+      
     </a>
     <!-- Header End -->
 
@@ -532,6 +685,25 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+      // Hàm tăng số lượng
+      function increaseQuantity() {
+        var inputElement = document.getElementById('quantityInput');
+        var currentQuantity = parseInt(inputElement.value);
+        inputElement.value = currentQuantity + 1;
+      }
+  
+      // Hàm giảm số lượng
+      function decreaseQuantity() {
+        var inputElement = document.getElementById('quantityInput');
+        var currentQuantity = parseInt(inputElement.value);
+        
+        // Kiểm tra để đảm bảo số lượng không âm
+        if (currentQuantity > 1) {
+          inputElement.value = currentQuantity - 1;
+        }
+      }
+    </script>
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
