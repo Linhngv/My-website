@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My Website</title>
+    <title>Ex2</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -28,84 +28,23 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-     /* Style the tab */
-.tab {
-  overflow: hidden;
-  background-color: #f1f1f1;
+        
+    .mySlides {display:none;}
+    .search-container {
+    display: flex;
+        margin-left: 100%;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 50px;
-  transition: 0.3s;
-  font-size: 20px;
+.search-container input {
+    flex: 1;
+
 }
 
-/* Change background color of buttons on hover */
-.tab a:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab a.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-}
-/* ex1 tab design va implement */
-/* Style the tab */
-.tab1 {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
-}
-
-/* Style the buttons inside the tab */
-.tab1 a {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab a:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab a.active1 {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent1 {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-}
-        </style>
+.search-container .search-button {
+    cursor: pointer;
+}       
+.mySlides1 {display:none}
+    </style>
 </head>
 
 <body>
@@ -124,9 +63,9 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="lab.html" class="nav-item nav-link">Lab</a>
-                    <a href="team.html" class="nav-item nav-link active">Labs</a>
+                    <a href="team.html" class="nav-item nav-link">Labs</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ex1/ Ex2</a>
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Ex1/ Ex2</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="ex1.html" class="dropdown-item">Ex1</a>
                             <a href="ex2.html" class="dropdown-item">Ex2</a>
@@ -145,46 +84,99 @@
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
-            <h3 class="display-3 font-weight-bold text-white">Our Teachers</h3>
+            <h3 class="display-3 font-weight-bold text-white">Ex2</h3>
             <div class="d-inline-flex text-white">
                 <p class="m-0"><a class="text-white" href="">Home</a></p>
                 <p class="m-0 px-2">/</p>
-                <p class="m-0">Our Teachers</p>
-
+                <p class="m-0">Ex2</p>
             </div>
         </div>
     </div>
     <!-- Header End -->
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      </div>
-      
-      <div id="London" class="tabcontent">
-        <div class="tab1">
-            <button class="tablinks1" onclick="openCity(event, 'd1')" id="defaultOpen">Design</button>
-            <button class="tablinks1" onclick="openCity(event, 'i1')">Implement</button>
-          </div>
-          
-          <div id="d1" class="tabcontent1">
-            <p></p>
-          </div>
-          
-          <div id="i1" class="tabcontent1">
-            <p>Paris is the capital of France.</p> 
-          </div>
-          
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
 
-      
-     
-      
+
+    <!-- Detail Start -->
+    <div class="container py-5">
+        <div class="row pt-5">
+            <div class="col-lg-8">
+                <div class="d-flex flex-column text-left mb-3">
+                   
+                      <table>
+                        <tr>
+                          <td><h1 class="mb-3">Một vài phim hoạt hình</h1></td>
+                          <td>
+                            <div class="search-container">
+                                <input type="text" name="search" placeholder="Search...">
+                                <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+                            </div>
+                        
+                          </td>
+                        </tr>
+                        
+                      </table>
+                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Vùng đất linh hồn-->
+                <div class="w3-content w3-section" style="max-width:450px">
+                  <img class="mySlides" src="https://i.pinimg.com/564x/4c/b3/c7/4cb3c798ff218e03962d467f7b34982d.jpg" style="width:100%;margin-left: 80%;">
+                  <img class="mySlides" src="https://i.pinimg.com/564x/90/d6/c6/90d6c6f6dbc6887a4fb65440b5a9284b.jpg" style="width:100%;margin-left: 80%">
+                  <img class="mySlides" src="https://i.pinimg.com/564x/61/4e/36/614e3617d1f6dc327212f75b0d3b40bd.jpg" style="width:100%;margin-left: 80%;">
+                  <img class="mySlides" src="https://i.pinimg.com/564x/81/fc/19/81fc1901d87b85a1a9e6a63cd089e640.jpg" style="width:100%;margin-left: 80%;">
+                </div>
+                <br><h6 style="font-family: tahoma; color: black; text-align: center;">Vùng đất linh hồn</h6>
+                <table>
+                    <tr>
+                        <td >
+                            <p style="margin-left: 5%; margin-top: 10%;">Trên đường chuyển đến nhà mới, gia đình của cô bé 10 tuổi Ogino Chihiro phát hiện một <br>
+                            công viên bị bỏ hoang.Tò mò, cả gia đình vào công viên, mặc dù không biết gì về nó cả,  <br>
+                            đó là nơi cư trú bí mật của những linh hồn chìm trong giấc ngủ vào ban ngày và xuất <br>
+                            hiện khi về đêm. Khi bố mẹ của Chihiro ăn thức ăn của một cửa hàng ven đường, 
+                            những <br>linh hồn giận dữ  đã bến họ thành lợn. Hơn nữa,một vùng biển rộng lớn <br>xuất hiện giữa, 
+                             thế giới linh hồn với thế giới con người, khiến Chihiro phải ở lại vùng đất linh hồn...</p>
+                        </td>
+                        <td ><img src="https://i.pinimg.com/564x/f7/a3/43/f7a343ecf3f37aefb0f521d84374c9b5.jpg" style="width: 30%;margin-left: 50%; margin-top: 10%;"></td>
+                      </tr>
+                </table>
+                <!--Totoro-->
+                
+                <div class="w3-content" style="max-width:500px; margin-top: 100px;">
+                    <img class="mySlides1" src="https://i.pinimg.com/736x/69/be/f9/69bef9378efe6d602b51866aab00cf91.jpg" style="width:80%;margin-left: 80%;margin-top: 10%;">
+                    <img class="mySlides1" src="https://i.pinimg.com/564x/ae/cf/0f/aecf0f80ff0d9e89156b1f15f7a447e7.jpg" style="width:80%;margin-left: 80%; margin-top: 10%;">
+                    <img class="mySlides1" src="https://i.pinimg.com/564x/69/6a/16/696a1684ee813b982f221e8222de726c.jpg" style="width:80%;margin-left: 80%; margin-top: 10%;">
+                    <img class="mySlides1" src="https://i.pinimg.com/564x/38/ef/07/38ef078fb3ff22357e7e2e9574e2aa85.jpg" style="width:80%;margin-left: 80%; margin-top: 10%;">
+                </div>
+                  <br>
+                  
+                  <div class="w3-center" style="margin-left: 45%;">
+                    <div class="w3-section">
+                      <button class="w3-button w3-light-grey" onclick="plusDivs(-1)" style="border: none;">❮ Prev</button>
+                      <button class="w3-button w3-light-grey" onclick="plusDivs(1)" style="border: none;">Next ❯</button>
+                    </div>
+                  </div>
+                  
+                  <br><h6 style="font-family: tahoma; color: black; text-align: center;">Hàng Xóm Của Tôi Là Totoro</h6>
+                  <table>
+                      <tr>
+                          <td >
+                              <p  style="margin-left: 5%;">
+                                Gia đình ông Kusakabe chuyển về vùng nông thôn sinh sống. Ở căn nhà mới mà <br> họ chuyển tới bị đồn là có ma ám. 
+                                 Hai chị em Satsuki (11 tuổi) và Mei (4 tuổi) vô cùng tò <br>mò về điều ấy,  ở đây  hai chị em quen được bà lão hàng 
+                                  xóm tốt bụng và cháu trai bà <br>Kanta.Một lần chạy chơi trong khu rừng gần nhà, Mei đã tình cờ gặp thần rừng ở đó, <br> 
+                                   là một con thú bụng bự rất dễ thương, cô bé gọi nó là Totoro theo tên con thú trong <br> cuốn sách tranh của mình. 
+                                    Sau khi nghe Mei kể về mình đã gặp Totoro, cô chị Satsuki <br>cũng mong muốn được gặp Totoro. Và hai chị em đã 
+                                    cùng được gặp lại Totoro  khi ra bến <br>xe buýt chờ bố. Từ đó cuộc sống của hai chị em bắt đầu thay đổi và cuộc 
+                                    phiêu lưu kì thú của hai chị em bắt đầu... </p>
+                          </td>
+                          <td ><img src="https://i.pinimg.com/564x/ee/2e/8d/ee2e8da453f4e7226ee495b7da7f0899.jpg" style="width: 30%;margin-left: 50%;"></td>
+                        </tr>
+                  </table>
+                
+    <!-- Detail End -->
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -244,9 +236,7 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h3 class="text-primary mb-4">Newsletter</h3>
                 <form action="">
-                    <div class="form-group">
-                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
-                    </div>
+                    
                     <div class="form-group">
                         <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
                             required="required" />
@@ -259,11 +249,9 @@
         </div>
         <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved.
-                Designed
+                &copy; <a class="text-primary font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
                 by
                 <a class="text-primary font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-                <a>and Reup By Myself</a>
             </p>
         </div>
     </div>
@@ -276,40 +264,49 @@
 
     <!-- JavaScript Libraries -->
     <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides1");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
           }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-red", "");
           }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-red";
         }
         </script>
-        <!--ex1 tab design and implement-->
-        <script>
-            function openCity(evt, cityName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent1");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks1");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active1", "");
-              }
-              document.getElementById(cityName).style.display = "block";
-              evt.currentTarget.className += " active1";
-            }
-            
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-            </script>
-               
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
