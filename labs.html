@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>gallery</title>
+    <title>My Website</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -27,6 +27,69 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+     /* Style the tab */
+     .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+
+}
+.navbar  li{
+  list-style: none;
+}
+.navbar li a{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+
+}
+.navbar li a:hover{
+  color: #38a7b9;
+}
+        </style>
 </head>
 
 <body>
@@ -45,15 +108,15 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="lab.html" class="nav-item nav-link">Lab</a>
-                    <a href="team.html" class="nav-item nav-link">Labs</a>
+                    <a href="lab6.html" class="nav-item nav-link active">Labs</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ex1/ Ex2</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EX</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="ex1.html" class="dropdown-item">Ex1</a>
                             <a href="ex2.html" class="dropdown-item">Ex2</a>
                         </div>
                     </div>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="lab6.html" class="nav-item nav-link">Lab6</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="" class="btn btn-primary px-4">Join Class</a>
@@ -65,101 +128,27 @@
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">Gallery</h3>
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
+            <h3 class="display-3 font-weight-bold text-white">Labs</h3>
             <div class="d-inline-flex text-white">
                 <p class="m-0"><a class="text-white" href="">Home</a></p>
                 <p class="m-0 px-2">/</p>
-                <p class="m-0">Gallery</p>
+                <p class="m-0">Labs</p>
+
             </div>
         </div>
     </div>
-    <!-- Header End -->
+   <!-- menu-->
+   <div class="navbar">
+    <ul class="links">
+        <li><a href="lab6.html">Lab6</a></li>
+    </ul>
 
+   </div>
 
-    <!-- Gallery Start -->
-    <div class="container-fluid pt-5 pb-3">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Our Gallery</span></p>
-                <h1 class="mb-4">Our Kids School Gallery</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-outline-primary m-1" data-filter=".first">Playing</li>
-                        <li class="btn btn-outline-primary m-1" data-filter=".second">Drawing</li>
-                        <li class="btn btn-outline-primary m-1" data-filter=".third">Reading</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Gallery End -->
-
+    
+     
+      
 
     <!-- Footer Start -->
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
@@ -187,7 +176,7 @@
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Address</h5>
-                        <p>Nong lam University</p>
+                        <p>Nong Lam University</p>
                     </div>
                 </div>
                 <div class="d-flex">
@@ -211,7 +200,7 @@
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Lab</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Labs</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
                     <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                 </div>
@@ -250,6 +239,52 @@
 
 
     <!-- JavaScript Libraries -->
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent1, tablinks1;
+          tabcontent1 = document.getElementsByClassName("tabcontent1");
+          for (i = 0; i < tabcontent1.length; i++) {
+            tabcontent1[i].style.display = "none";
+          }
+          tablinks1 = document.getElementsByClassName("tablinks1");
+          for (i = 0; i < tablinks1.length; i++) {
+            tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+  </script>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent2, tablinks2;
+      tabcontent2 = document.getElementsByClassName("tabcontent2");
+      for (i = 0; i < tabcontent2.length; i++) {
+        tabcontent2[i].style.display = "none";
+      }
+      tablinks2 = document.getElementsByClassName("tablinks2");
+      for (i = 0; i < tablinks2.length; i++) {
+        tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
