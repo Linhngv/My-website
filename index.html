@@ -28,26 +28,111 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .pill-nav a {
-  display: inline-block;
-  color: black;
+        @keyframes slideInleft{
+            from{
+                transform: translateX(-400px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        .song{
+            width:30%;
+            
+            animation: slideInleft 2s ease-in 0s infinite reverse none;
+        }
+        .sh{
+            width:8%;
+            float: right;
+            animation: slideInleft 2s ease-in 0s infinite normal none;
+        }
+        .rua{
+            animation: slideInleft 5s ease-in 0s 1 normal none;
+        }
+        .feedback-form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
   text-align: left;
-  padding: 14px;
-  text-decoration: none;
-  font-size: 17px;
-  border-radius: 5px;
-  right: 20%;
- 
+  padding: 16px;
 }
-
-.pill-nav a:hover {
-  background-color: #ddd;
-  color: black;
+.lk{
+    border-radius: 15px;
+    background:darkgreen;
+    transition: transform 0.3 ease 0s ;
 }
-
-.pill-nav a.active {
-  background-color: dodgerblue;
-  color: white;
+.lk:hover{
+    transform: translateY(-10px);
+    background: darkolivegreen;
 }
     </style>
 </head>
@@ -85,405 +170,132 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Header Start -->
-    <div class="pill-nav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-    <!-- Header End -->
     
-
-    <!-- Facilities Start -->
+   
     
+    
+    <!-- Ainamtion -->
+   <section style="margin-top: 10%;">
+   
+   <span>
+    <img src="https://i.pinimg.com/564x/74/b3/64/74b3645a09aef32a263ac96828c9c757.jpg" class="song">
+    <img src="https://i.pinimg.com/736x/94/38/b0/9438b01512e38410a1ef38a96653c2b9.jpg" style="width: 12%" class="cavoi">
+    <img src="https://i.pinimg.com/564x/1a/f2/47/1af2473060107752840657fbef52d4c8.jpg" style="width: 3%;" class="rua">
+    <img src="https://i.pinimg.com/564x/40/f5/d1/40f5d189071ef70505f34042c9ade859.jpg" style="width: 2%; margin-bottom: 8%;" >
+    <img src="https://i.pinimg.com/564x/b0/5c/d2/b05cd2e9dd1c531ecb3e63a0c21c928c.jpg" class="sh">
+   </span>
 
+   </section>
+   <h4 style="margin-top: 20px; margin-left: 15px;font-family: tahoma; font-weight: 300;">Các động vật quanh ta</h4>
+   <p style="margin-left: 2%; margin-top: 3%;">
+    Động vật là một phần quan trọng của hệ sinh thái trái đất. Chúng đa dạng về hình thức, kích thước và hành vi. Có những động vật sống trên cạn như voi, 
+    sư tử và hươu cao cổ, cũng như những sinh vật biển đa dạng như cá, cá heo và sứa. Mỗi loài động vật đều có vai trò đặc biệt trong chuỗi thức ăn và giữ 
+    gìn sự cân bằng của tự nhiên. Con người đã tìm cách tận dụng động vật để đáp ứng nhu cầu cuộc sống, từ việc làm việc cùng với gia súc đến việc nuôi cá 
+    cảnh trong những bể nuôi. Động vật không chỉ là những sinh linh đẹp tự nhiên mà còn đóng vai trò quan trọng trong việc duy trì sự phong phú và cân bằng
+    của hệ sinh thái.
+    
+    </p>
+ <!--Input Controls -->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-5 mb-lg-0" src="img/about-1.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <p class="section-title pr-5"><span class="pr-2">Learn About Us</span></p>
-                    <h1 class="mb-4">Best School For Your Kids</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
-                    <div class="row pt-2 pb-4">
-                        <div class="col-6 col-md-4">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
-                        <div class="col-6 col-md-8">
-                            <ul class="list-inline m-0">
-                                <li class="py-2 border-top border-bottom"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                                <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
-                </div>
-            </div>
-        </div>
+     <div style="margin-left: 2%; margin-top: 3%;">
+        <h4 style="font-family: tahoma;font-weight: 300;">Động vật yêu thích</h4>
+        <img src="https://i.pinimg.com/564x/ec/80/de/ec80de25412a783f293d934c736e511d.jpg" style="width: 5%;" >
+        <input type="text" placeholder="Động vật dưới nước" name="location" style="margin-left: 5%; margin-right: 3%;" >
+       <span>
+        <img src="https://i.pinimg.com/564x/e6/28/f9/e628f91a2e56b05d20b021ebb537fa41.jpg" style="width: 5%; margin-left: 3%;" >
+        <input type="text" placeholder="Động vật trên cạn" name="location" >
+        <img src="https://i.pinimg.com/564x/c0/77/b9/c077b9d5fd2e1d1af178cb4e5016744d.jpg" style="width: 5%; margin-left: 4%;" >
+        <input type="text" placeholder="Động vật trên không" name="location" >
+    </span>
+    
     </div>
-    <!-- About End -->
 
+    <!-- Default Settings -->
+    <table>
+        <tr>
+        <th><div style="margin-top: 2%;">
+        <h4 style="font-family: tahoma;font-weight: 300;">Động vật biển cần bảo vệ</h4>
+        <label class="container">Cá voi <img src="https://i.pinimg.com/736x/94/38/b0/9438b01512e38410a1ef38a96653c2b9.jpg" style="width: 10%;" class="cavoi">
+          <input type="checkbox" checked="checked" >
+          <span class="checkmark"> </span>
+        </label>
+        <label class="container">Sứa  <img src="https://i.pinimg.com/564x/ec/80/de/ec80de25412a783f293d934c736e511d.jpg" style="width: 10%;" >
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Sao biển  <img src="https://i.pinimg.com/564x/62/75/98/627598d4126ad814acacb26b6a53c304.jpg" style="width: 10%;" >
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Rùa  <img src="https://i.pinimg.com/564x/1a/f2/47/1af2473060107752840657fbef52d4c8.jpg" style="width: 10%;">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+    </div></th>
+  
+    <th><div style=" margin-top: 3%; "></div>
+    
+        <h4 style="font-family: tahoma;font-weight: 300;">Chung tay bảo vệ môi trường biển</h4>
+        
+   
+        <p style="font-weight: 100;">
+            Biển cả ngày càng phải đối mặt với những thách thức lớn do sự can thiệp của con người, biến đổi khí hậu, và ô nhiễm. Sinh vật biển đang phải chịu áp lực từ mất môi trường sống, giảm nguồn thức ăn, và sự đe dọa từ rác thải nhựa. Đặc biệt, các loài cá, rùa biển và cá voi đang đối diện với nguy cơ tuyệt chủng.
+            <br>
 
-    <!-- Class Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Popular Classes</span></p>
-                <h1 class="mb-4">Classes for Your Kids</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Drawing Class</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
-                        </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Language Learning</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
-                        </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-3.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Basic Science</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
-                        </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+Chúng ta cần hành động ngay bây giờ để bảo vệ môi trường biển. Hạn chế sử dụng nhựa, đảm bảo việc quản lý và xử lý chất thải một cách bền vững, và thúc đẩy các biện pháp bảo tồn có thể giúp giữ gìn đa dạng sinh học và duy trì sức khỏe của hệ sinh thái biển. Hãy cùng nhau hành động để bảo vệ biển cả và kế thừa một hành tinh lành mạnh cho thế hệ sau.
+        </p>
+        <img src="https://i.pinimg.com/564x/49/4e/96/494e96dc309834bc93326e89e3006dfc.jpg" style="width: 15%;">
+        <img src="https://i.pinimg.com/564x/4b/b9/71/4bb9715c5fed1338e26f95d3881394a9.jpg" style="width: 15%;">
+        <img src="https://i.pinimg.com/564x/2c/e1/1e/2ce11ef1a386452f54b5fa75d1858c15.jpg" style="width: 15%;">
+        
     </div>
-    <!-- Class End -->
+    </th>
+</tr>
+</table>
+<div style="margin-left: 2%; margin-top: 3%;  margin-left: 60%; " >
+    <a href="https://svw.vn/vi/">
+        <button class="lk">Tham gia Bảo tồn Động vật Hoang dã tại Việt Nam </button>
+    </a>
+</div>
 
+<h4 style="font-family: tahoma;font-weight: 100; margin-top: 3%; margin-left: 2%;">Feedback và Liên hệ </h4>
+    <!-- Guided Action -->
 
-    <!-- Registration Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
-                    <p class="section-title pr-5"><span class="pr-2">Book A Seat</span></p>
-                    <h1 class="mb-4">Book A Seat For Your Kid</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
-                    <ul class="list-inline m-0">
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Diam dolor diam elitripsum vero.</li>
-                    </ul>
-                    <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0">
-                        <div class="card-header bg-secondary text-center p-4">
-                            <h1 class="text-white m-0">Book A Seat</h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-primary p-5">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select A Class</option>
-                                        <option value="1">Class 1</option>
-                                        <option value="2">Class 1</option>
-                                        <option value="3">Class 1</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-secondary btn-block border-0 py-3" type="submit">Book Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="feedback-form" style="margin-left: 2%; margin-top: 3%; " >
+        <h4 style="font-family: tahoma;font-weight: 300;">Feedback</h4>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
     </div>
-    <!-- Registration End -->
+    <!-- biểu mẫu liên hệ -->
+    <div class="contact-form" style="margin-left: 2%; margin-top: 3%; ">
+        <h4 style="font-family: tahoma;font-weight: 300;">Contact Us</h4>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <!-- Team Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
-                <h1 class="mb-4">Meet Our Teachers</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="" >
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Julia Smith</h4>
-                    <i>Music Teacher</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="" >
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Jhon Doe</h4>
-                    <i>Language Teacher</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="" >
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Mollie Ross</h4>
-                    <i>Dance Teacher</i>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-4.jpg" alt="" >
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Donald John</h4>
-                    <i>Art Teacher</i>
-                </div>
-            </div>
-        </div>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container p-0">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Testimonial</span></p>
-                <h1 class="mb-4">What Parents Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item px-3">
-                    <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-1.jpg" style="width: 70px; height: 70px;" alt="Image">
-                        <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item px-3">
-                    <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-2.jpg" style="width: 70px; height: 70px;" alt="Image">
-                        <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item px-3">
-                    <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-3.jpg" style="width: 70px; height: 70px;" alt="Image">
-                        <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item px-3">
-                    <div class="bg-light shadow-sm rounded mb-4 p-4">
-                        <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img class="rounded-circle" src="img/testimonial-4.jpg" style="width: 70px; height: 70px;" alt="Image">
-                        <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Latest Blog</span></p>
-                <h1 class="mb-4">Latest Articles From Blog</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 mb-4">
-                    <div class="card border-0 shadow-sm mb-2">
-                        <img class="card-img-top mb-2" src="img/blog-1.jpg" alt="">
-                        <div class="card-body bg-light text-center p-4">
-                            <h4 class="">Diam amet eos at no eos</h4>
-                            <div class="d-flex justify-content-center mb-3">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card border-0 shadow-sm mb-2">
-                        <img class="card-img-top mb-2" src="img/blog-2.jpg" alt="">
-                        <div class="card-body bg-light text-center p-4">
-                            <h4 class="">Diam amet eos at no eos</h4>
-                            <div class="d-flex justify-content-center mb-3">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card border-0 shadow-sm mb-2">
-                        <img class="card-img-top mb-2" src="img/blog-3.jpg" alt="">
-                        <div class="card-body bg-light text-center p-4">
-                            <h4 class="">Diam amet eos at no eos</h4>
-                            <div class="d-flex justify-content-center mb-3">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-
+    
 
     <!-- Footer Start -->
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
