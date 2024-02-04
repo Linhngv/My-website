@@ -27,6 +27,54 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+    </style>
 </head>
 
 <body>
@@ -66,11 +114,11 @@
     <!-- Header Start -->
     <div class="container-fluid bg-primary mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
-            <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
+            <h3 class="display-3 font-weight-bold text-white">Result</h3>
             <div class="d-inline-flex text-white">
                 <p class="m-0"><a class="text-white" href="">Home</a></p>
                 <p class="m-0 px-2">/</p>
-                <p class="m-0">Contact Us</p>
+                <p class="m-0">Result</p>
             </div>
         </div>
     </div>
@@ -78,74 +126,72 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Get In Touch</span></p>
-                <h1 class="mb-4">Contact Us For Any Query</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-7 mb-5">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-5 mb-5">
-                    <p>Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est eirmod eirmod amet.</p>
-                    <div class="d-flex">
-                        <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
-                        <div class="pl-3">
-                            <h5>Address</h5>
-                            <p>Nong lam University</p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
-                        <div class="pl-3">
-                            <h5>Email</h5>
-                            <p>22130147@st.hcmuaf.edu.vn</p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
-                        <div class="pl-3">
-                            <h5>Phone</h5>
-                            <p>+012 345 67890</p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
-                        <div class="pl-3">
-                            <h5>Opening Hours</h5>
-                            <strong>Sunday - Friday:</strong>
-                            <p class="m-0">08:00 AM - 05:00 PM </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Implement</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Requirement</h3>
+  <p>Trang này hiển thị toàn bộ kết quả của các thành viên, user
+    không phải dùng bất cứ thao tác gì để xem kết quả, dữ liệu
+    hiển thị dạng trải dài toàn bộ các thành viên (đặt tên
+    result.html) <br>
+    • Từng sinh viên liệt kê những gì mình đã làm, học được
+    trong suốt quá trình làm bài tập nhóm, dẫn link tới từng
+    phần mà mình đã làm). <br>
+    • Có button Result để link tới trang Result cá nhân của từng
+    thành viên <br>
+    • Tự đánh giá mình được bao nhiêu % trong tổng số 100%
+    công việc của nhóm. Cần làm sao cho đẹp và thể hiện
+    phong cách của từng nhóm.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Design</h3>
+  <h5 style="font-family: tahoma; font-weight: normal;">Thiết kế trên giấy</h5>
+  <img src="img/res.jpg" style="width: 60%;">
+  <a href="img/res.jpg" download> <button style="border-radius: 5px; background-color: #38a7b9; color: #fff; border: none; margin-top: 20px;"><i class="fa fa-download"></i>
+    Download</button></a></a>
+    <h5 style="font-family: tahoma;font-weight: normal; margin-top: 5%;">Thiết kế trên Figma</h5>
+    <img src="img/r.des.png" alt="">
+    <a href="img/r.des.png" download> <button style="border-radius: 5px; background-color: #38a7b9; color: #fff; border: none; margin-top: 20px;"><i class="fa fa-download"></i>
+        Download</button></a></a>
+        <a href="https://www.figma.com/file/Mp0GooozXM1QTS0dTQHFP7/Result?type=design&t=VfvEDyVABDmTauej-6" > <button style="border-radius: 5px; background-color: #38a7b9; color: #fff; border: none; margin-top: 20px;">
+           Go to Figma</button></a></a>
+  <p>.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Implement</h3>
+  <table>
+    <tr>
+      <th style="font-size: 20px;">Web cá nhân <i class="fas fa-user-alt"></i></th>
+      <th style="font-size: 20px;">Web nhóm <i class="	fas fa-users"></i></th>
+      <th style="font-size: 20px;">Web project <i class="fas fa-edit"></i></th>
+    </tr>
+    <tr>
+      <td>Làm đầy đủ các bài tập.</td>
+      <td>Làm 1 phần của trang Home và 1 phần <br> của trang Technical.</td>
+      <td>Làm trang Home</td>
+    </tr>
+    <tr>
+      <td>Hoàn chỉnh website cá nhân.</td>
+      <td>Hoàn thành 1 phần của trang Home và <br> 1 phần của trang Technical.</td>
+      <td>Hoàn thành trang Home. </td>
+    </tr>
+    <tr>
+      <td> <i class="fas fa-edit" style="color: #38a7b9;"></i>Đóng góp: 100%</td>
+      <td><i class="fas fa-edit" style="color: #38a7b9;"></i>Đóng góp: 20%</td>
+      <td><i class="fas fa-edit" style="color: #38a7b9;"></i>Đóng góp: 20%</td>
+    </tr>
+  </table>
+  
+  <p>Tokyo is the capital of Japan.</p>
+</div>
     <!-- Contact End -->
 
 
@@ -244,7 +290,21 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
